@@ -1,0 +1,7 @@
+C:\Users\Pavan C\Desktop\CS programming\MyRecapProject\MyRecapProject\bin\Debug\MyRecapProject.exe.config
+C:\Users\Pavan C\Desktop\CS programming\MyRecapProject\MyRecapProject\bin\Debug\MyRecapProject.exe
+C:\Users\Pavan C\Desktop\CS programming\MyRecapProject\MyRecapProject\bin\Debug\MyRecapProject.pdb
+C:\Users\Pavan C\Desktop\CS programming\MyRecapProject\MyRecapProject\obj\Debug\MyRecapProject.csproj.AssemblyReference.cache
+C:\Users\Pavan C\Desktop\CS programming\MyRecapProject\MyRecapProject\obj\Debug\MyRecapProject.csproj.CoreCompileInputs.cache
+C:\Users\Pavan C\Desktop\CS programming\MyRecapProject\MyRecapProject\obj\Debug\MyRecapProject.exe
+C:\Users\Pavan C\Desktop\CS programming\MyRecapProject\MyRecapProject\obj\Debug\MyRecapProject.pdb
