@@ -1,8 +1,10 @@
 ﻿using System;
 using System.CodeDom;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Runtime.CompilerServices;
+using System.Runtime.Remoting.Services;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -45,16 +47,16 @@ namespace MyRecapProject
 
             // Text based 
 
-           /* char Lastname = 'C';
-            string FirstName = "Pavan";
+            /* char Lastname = 'C';
+             string FirstName = "Pavan";
 
-            Console.WriteLine("May name is :" + FirstName + Lastname);     
+             Console.WriteLine("May name is :" + FirstName + Lastname);     
 
-            var ExpSalary = 120000000;   // Explicit typing
-            Console.WriteLine("Expected salary is :" + ExpSalary);
+             var ExpSalary = 120000000;   // Explicit typing
+             Console.WriteLine("Expected salary is :" + ExpSalary);
 
-            bool isGenz = true;
-            //Console.WriteLine("GenZ :{0}", isGenz); */
+             bool isGenz = true;
+             //Console.WriteLine("GenZ :{0}", isGenz); */
 
 
             // TypeCasting 
@@ -82,34 +84,108 @@ namespace MyRecapProject
 
             // Console Input/Output
 
-            Console.WriteLine("What is your name :");
-            string name = Console.ReadLine();
+            /* Console.WriteLine("What is your name :");
+             string name = Console.ReadLine();
 
-            Console.Write("What is your age :");
-            //int age = Console.ReadLine();                        // throw error as ReadLine() returns string
-            var ageInput = Console.ReadLine();
-            int age = Convert.ToInt32(ageInput);
+             Console.Write("What is your age :");
+             //int age = Console.ReadLine();                        // throw error as ReadLine() returns string
+             var ageInput = Console.ReadLine();
+             int age = Convert.ToInt32(ageInput);
 
-            //Console.WriteLine("Hi "+ name + ", your age is "+ age); 
+             //Console.WriteLine("Hi "+ name + ", your age is "+ age);  */
 
 
             // If else statement
 
-            if (age <= 0 || age >= 150)
+            /*if (age <= 0 || age >= 150)
                 Console.WriteLine("Invalid Age!!......");
             else
             {
-                if (age >=18 && age <= 25)
+                if (age >= 18 && age <= 25)
                     Console.WriteLine("your age is between 18 and 25");
-                else if (age >=25)
+                else if (age >= 25)
                     Console.WriteLine("You're 25 or older ");
+            } */
+
+            //Example
+
+            /*Console.WriteLine("Enter first Number:");
+            string numInput1 = Console.ReadLine();
+            int number1 = Convert.ToInt32(numInput1);
+
+            Console.WriteLine("Enter second number:");
+            string numInput2 = Console.ReadLine();
+            int number2 = Convert.ToInt32(numInput2);
+
+            int ans = number1 * number2;
+
+            Console.WriteLine("The value of "+ number1 +" X " + number2 +"is :");
+            string ansInput = Console.ReadLine();
+            int answer = Convert.ToInt32(ansInput);
+
+
+            if (ans == answer)
+            {
+                Console.WriteLine("Well Done!");
+            }
+            else
+            {
+                Console.WriteLine("Close! Better luck next time...");
+            }  */
+
+
+            // Switch statement
+
+            /*Console.WriteLine("Choose a number betweeen 1 and 7 :");
+            int day = Convert.ToInt32(Console.ReadLine());
+
+            switch(day)
+            {
+                case 1: Console.WriteLine("Sunday");
+                    break;
+                case 2: Console.WriteLine("Monday");
+                    break;
+                case 3: Console.WriteLine("Tuesday");
+                    break;
+                case 4: Console.WriteLine("Wednesday");
+                    break;
+                case 5: Console.WriteLine("Thursday");
+                    break;
+                case 6: Console.WriteLine("Friday");
+                    break;
+                case 7: Console.WriteLine("Saturday");
+                    break;
+                default: Console.WriteLine("Invalid Choice");
+                    break;
+            }  */
+
+
+            // Loops
+
+            //For loop
+
+            Console.WriteLine("What do you want me to say? :");
+            string message = Console.ReadLine();
+
+            Console.WriteLine("How many times you want this to repeat? :");
+            int number = Convert.ToInt32(Console.ReadLine());
+
+            if(number <=0)
+            {
+                Console.WriteLine("Are you crazyy!?");
+            }
+            else
+            {
+                for (int i = 0; i < number; i++)
+                {
+                    Console.WriteLine(message);
+                }
             }
 
+            // While Loop
+                
 
-
-
-
-
+           
 
                 Console.ReadLine();
 
