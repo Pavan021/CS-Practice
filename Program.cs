@@ -164,7 +164,7 @@ namespace MyRecapProject
 
             //For loop
 
-            Console.WriteLine("What do you want me to say? :");
+            /*Console.WriteLine("What do you want me to say? :");
             string message = Console.ReadLine();
 
             Console.WriteLine("How many times you want this to repeat? :");
@@ -180,14 +180,62 @@ namespace MyRecapProject
                 {
                     Console.WriteLine(message);
                 }
-            }
+            }   */
 
             // While Loop
-                
 
-           
+            Console.WriteLine("What is your first number?");
+            string numw1In = Console.ReadLine();
+            int numw1 = Convert.ToInt32(numw1In);
 
-                Console.ReadLine();
+            Console.WriteLine("What is your Second number?");
+            string numw2In = Console.ReadLine();
+            int numw2 = Convert.ToInt32(numw2In);
+            Console.WriteLine();
+
+            int actualAnswer = numw1 *numw2;
+
+            int answer = 0;
+
+            /*while(answer != actualAnswer)
+            {
+                Console.WriteLine("What is" + numw1 +" X " + numw2 +"?" );
+                string usInAnswer = Console.ReadLine();
+                answer = Convert.ToInt32(usInAnswer);
+
+                if(answer != actualAnswer)
+                {
+                    Console.WriteLine("Bad luck! Try Again...");
+                }
+            }
+            Console.WriteLine("Well done!");  */
+
+            //Do While
+
+            /*do
+            {
+                Console.WriteLine("What is" + numw1 + " X " + numw2 + "?");
+                string usInAnswer = Console.ReadLine();
+                Console.WriteLine();
+                answer = Convert.ToInt32(usInAnswer);
+
+                if (answer != actualAnswer)
+                {
+                    Console.WriteLine("Bad luck! Try Again...");
+                    Console.WriteLine();
+                }
+            } while (answer != actualAnswer);
+
+            Console.WriteLine("Well done!");  */
+
+
+
+
+
+
+
+
+            Console.ReadLine();
 
 
         }
