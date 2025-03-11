@@ -240,7 +240,7 @@ namespace MyRecapProject
 
             //Numeric formatting
 
-            double res = 40D / 3D;
+            /*double res = 40D / 3D;
 
             Console.WriteLine(string.Format("$ {0:0.00}", res));  //13.33
             Console.WriteLine(string.Format("$ {0:0.#}", res));  //$ 13.3
@@ -258,9 +258,40 @@ namespace MyRecapProject
             Console.WriteLine(money.ToString("C",CultureInfo.CurrentCulture)); // -18.33
             Console.WriteLine(money.ToString("C", CultureInfo.CreateSpecificCulture("en-GB")));  //-£18.33
             Console.WriteLine(money.ToString("C",CultureInfo.CreateSpecificCulture("en-US")));    //($18.33)
-            Console.WriteLine(money.ToString("C", CultureInfo.CreateSpecificCulture("en-IN")));   // ? -18.33
+            Console.WriteLine(money.ToString("C", CultureInfo.CreateSpecificCulture("en-IN")));   // ? -18.33  
 
-           
+            */
+
+            // TryParse function     -- to prevent System.FormatException
+
+            //Console.WriteLine("Enter a number:");
+            //string input = Console.ReadLine();
+            //int number = Convert.ToInt32(input);
+
+            //Console.WriteLine(int.TryParse(input, out int number));   // returns 0 if fails and value if succeed
+
+            bool result = true;
+
+            while(result)
+            {
+                Console.WriteLine("Enter a number:");
+                string input = Console.ReadLine();
+
+                if (int.TryParse(input, out int number))
+                {
+                    result = false;
+                    Console.WriteLine(number);
+                }
+                else
+                {
+                    Console.WriteLine("Failed to convert");
+                }
+                    
+            }
+        
+
+
+            
 
 
 
