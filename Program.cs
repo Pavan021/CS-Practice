@@ -184,7 +184,7 @@ namespace MyRecapProject
 
             // While Loop
 
-            Console.WriteLine("What is your first number?");
+            /*Console.WriteLine("What is your first number?");
             string numw1In = Console.ReadLine();
             int numw1 = Convert.ToInt32(numw1In);
 
@@ -197,7 +197,7 @@ namespace MyRecapProject
 
             int answer = 0;
 
-            /*while(answer != actualAnswer)
+            while(answer != actualAnswer)
             {
                 Console.WriteLine("What is" + numw1 +" X " + numw2 +"?" );
                 string usInAnswer = Console.ReadLine();
@@ -208,7 +208,7 @@ namespace MyRecapProject
                     Console.WriteLine("Bad luck! Try Again...");
                 }
             }
-            Console.WriteLine("Well done!");  */
+            Console.WriteLine("Well done!");   */
 
             //Do While
 
@@ -226,10 +226,41 @@ namespace MyRecapProject
                 }
             } while (answer != actualAnswer);
 
-            Console.WriteLine("Well done!");  */
+            Console.WriteLine("Well done!"); */
+
+            //Conditional Operator
+            /*Console.WriteLine("Enter age :");
+            string ageIn = Console.ReadLine();
+            int age = Convert.ToInt32(ageIn);
+            
+
+            string result = age >= 0 ? "Valid!" : "Invalid!";
+            Console.WriteLine(result);  */
 
 
+            //Numeric formatting
 
+            double res = 40D / 3D;
+
+            Console.WriteLine(string.Format("$ {0:0.00}", res));  //13.33
+            Console.WriteLine(string.Format("$ {0:0.#}", res));  //$ 13.3
+            Console.WriteLine(res); // 13.3333333333333
+
+            double money = -55D / 3D;
+
+            Console.WriteLine(money); // -18.3333333333333
+            Console.WriteLine(string.Format("$-55 / $ 3 = ${0:0.00}", money));  //$-55 / $ 3 = $-18.33 wrong format
+
+            Console.WriteLine(money.ToString("C"));  //-18.33
+            Console.WriteLine(money.ToString("C0")); //-18
+            Console.WriteLine(money.ToString("C1")); //-18.33
+
+            Console.WriteLine(money.ToString("C",CultureInfo.CurrentCulture)); // -18.33
+            Console.WriteLine(money.ToString("C", CultureInfo.CreateSpecificCulture("en-GB")));  //-£18.33
+            Console.WriteLine(money.ToString("C",CultureInfo.CreateSpecificCulture("en-US")));    //($18.33)
+            Console.WriteLine(money.ToString("C", CultureInfo.CreateSpecificCulture("en-IN")));   // ? -18.33
+
+           
 
 
 
